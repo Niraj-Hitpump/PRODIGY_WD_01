@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Guide of Nepal</title>
+     <style>
+          * {
+               padding: 0;
+               margin: 0;
+               box-sizing: border-box;
+               font-family: 'Poppins', sans-serif;
+          }
+
+          body {
+               background-color: rgb(209, 247, 247);
+          }
+
+          .guide {
+               position: relative;
+               width: 100%;
+               /* height: 100%; */
+               max-height: 100vh;
+               box-sizing: border-box;
+          }
+
+          .heading3 {
+               font-size: 1.4vw;
+               justify-content: center;
+               padding: 5px;
+               text-align: center;
+               padding-top: 1vw;
+          }
+
+          .third {
+               display: grid;
+               grid-template-columns: repeat(2, 1fr);
+               margin-left: 10vw;
+               gap: 2vw;
+               margin-top: 2vw;
+
+          }
+
+          .first3 {
+               display: flex;
+          }
+
+          .first3 img {
+               height: 11vw;
+               width: 12vw;
+               border: 1px solid black;
+               border-radius: 8px;
+               box-shadow: 1px 2px 2px gray;
+               padding: 8px;
+          }
+
+          .info3 {
+               margin-top: 2vw;
+               margin-left: 2vw;
+          }
+
+          .info3 h3 {
+               font-size: 1.3vw;
+               padding: 0.1vw;
+          }
+
+          .info3 button {
+               height: 2.2vw;
+               width: 5.5vw;
+               background-color: lightseagreen;
+               font-size: large;
+               border: none;
+               border-radius: 3px;
+               margin: 7px;
+               margin-left: 3vw;
+          }
+
+          .info3 button:hover {
+               background-color: orange;
+               cursor: pointer;
+          }
+
+          /* media query of third section */
+          @media(max-width:600px) {
+               .heading3 {
+                    font-size: 2.5vw;
+               }
+
+               .info3 button {
+                    height: 3.5vw;
+                    width: 7vw;
+                    font-size: 1.4vw;
+               }
+
+               .third {
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+               }
+
+               .first3 img {
+                    height: 45vw;
+                    width: 45vw;
+                    border: 1px solid black;
+                    border-radius: 8px;
+                    box-shadow: 1px 2px 2px gray;
+                    padding: 5px;
+               }
+
+               .info3 {
+                    margin-top: 5vw;
+                    margin-left: 2vw;
+               }
+
+               .info3 h3 {
+                    font-size: 3.5vw;
+                    padding: 1vw;
+               }
+
+               .info3 button {
+                    height: 5.5vw;
+                    width: 11vw;
+                    background-color: lightseagreen;
+                    font-size: 2vw;
+                    border: none;
+                    border-radius: 3px;
+                    margin: 7px;
+                    margin-left: 6vw;
+               }
+
+          }
+     </style>
+</head>
+
+<body>
+     <div class="guide">
+          <div class="heading3">
+               <h1>Our Guide Team</h1>
+          </div>
+
+          <div class="third">
+
+               <div class="first3">
+                    <img src="images/manish.jpg" alt="">
+                    <div class="info3">
+                         <h3>Manish Kumar Mukhiya</h3>
+                         <h3>Hindi,Bhojpuri,Russian</h3>
+                         <h3>5 Years Experience</h3>
+                         <button type="button">Book</button>
+                    </div>
+
+               </div>
+
+               <div class="first3">
+                    <img src="images/sumit.jpg" alt="">
+                    <div class="info3">
+                         <h3>Sumit Kumar Sah</h3>
+                         <h3>English,Hindi,Nepali</h3>
+                         <h3>3 Years Experience</h3>
+                         <button type="button">Book</button>
+                    </div>
+               </div>
+
+               <div class="first3">
+                    <img src="images/aayush.jpg" alt="">
+                    <div class="info3">
+                         <h3>Aayush Aryal</h3>
+                         <h3>English,Nepali,Korean</h3>
+                         <h3>5 Years Experience</h3>
+                         <button type="button">Book</button>
+                    </div>
+               </div>
+
+               <div class="first3">
+                    <img src="images/yash.png" alt="">
+
+                    <div class="info3">
+                         <h3>Yash Gupta</h3>
+                         <h3>English,Nepali,Bhojpuri</h3>
+                         <h3>6 Years Experience</h3>
+                         <button type="button">Book</button>
+                    </div>
+               </div>
+
+               <div class="first3">
+                    <img src="images/IMG_E2191.JPG" alt="">
+                    <div class="info3">
+                         <h3>Pradip Mahato Koiri</h3>
+                         <h3>English,Maithali,Bhojpuri</h3>
+                         <h3>4 Years Experience</h3>
+                         <button type="button">Book</button>
+                    </div>
+               </div>
+
+               <div class="first3">
+                    <img src="images/niraj.jpg" alt="">
+                    <div class="info3">
+                         <h3>Niraj Kumar Prajapati</h3>
+                         <h3>English,French,Bhojpuri</h3>
+                         <h3>5 Years Experience</h3>
+                         <button type="button">Book</button>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+</body>
+
+</html>

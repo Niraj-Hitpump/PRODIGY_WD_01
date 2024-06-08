@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Trip cost</title>
+     <style>
+          * {
+               padding: 0;
+               margin: 0;
+               box-sizing: border-box;
+               font-family: 'Poppins', sans-serif;
+          }
+          body,html{
+               height: 100vh;
+               width: 100%;
+               background-color:rgb(237, 237, 255);
+          }
+          .main1{
+               margin-top: 25vh;
+          }
+          .content {
+               border: 1px solid black;
+               /* height: 60vh; */
+               height: auto;
+               width: 30%;
+               margin: auto;
+               box-shadow: 1px 2px 2px gray;
+               border-radius: 5px;
+               
+          }
+
+          .content h3 {
+               margin-left: 0.5vw;
+               padding: 4px;
+          }
+
+          .content .head h2,
+          .head h1 {
+               justify-content: center;
+               align-items: center;
+               text-align: center;
+               margin: 7px;
+
+          }
+
+          .head h1 {
+               color: green;
+               letter-spacing: 2px;
+          }
+
+          .destination .search {
+               padding-top: 4px;
+          }
+
+          .destination .search input {
+               height: 3vh;
+               width: 14vw;
+               padding: 5px;
+               font-size: large;
+               font-weight: 400;
+               border-style: none;
+               outline: none;
+               border: 1px solid black;
+               border-radius: 5px;
+               padding-top: 5px;
+
+
+          }
+
+          .search i {
+               padding-left: 0.5vw;
+          }
+
+          .hotel {
+               display: flex;
+          }
+
+          .hotel .box {
+               height: 3vh;
+               width: 5vw;
+               margin: 0.4vw;
+               border: 1px solid black;
+               justify-content: space-between;
+               align-items: baseline;
+               text-align: center;
+               border-radius: 4px;
+               font-size: large;
+               cursor: pointer;
+          }
+
+          .hotel .box:hover {
+               background-color: rgb(170, 243, 219);
+          }
+
+          .days {
+               display: flex;
+          }
+
+          .days .box {
+               height: 3vh;
+               width: 5vw;
+               margin: 0.4vw;
+               border: 1px solid black;
+               justify-content: space-between;
+               align-items: baseline;
+               text-align: center;
+               border-radius: 4px;
+               font-size: large;
+          }
+
+          .days .box:hover {
+               background-color: rgb(170, 243, 219);
+          }
+
+          .travel {
+               margin: 0.4vw;
+          }
+
+          .travel input {
+               height: 3vh;
+               width: 14vw;
+               padding: 5px;
+               font-size: large;
+               font-weight: 400;
+               border-style: none;
+               outline: none;
+               border: 1px solid black;
+               border-radius: 5px;
+               padding-top: 5px;
+          }
+
+          .travel i {
+               margin-right: 5vw;
+               justify-content: center;
+          }
+
+          .flight {
+               display: flex;
+          }
+
+          .flight .box {
+               height: 4vh;
+               width: 6vw;
+               margin: 0.4vw;
+               border: 1px solid black;
+               text-align: center;
+               border-radius: 4px;
+               font-size: large;
+
+          }
+
+          .flight .box:hover {
+               background-color: rgb(170, 243, 219);
+          }
+
+          .flight .box p {
+               text-align: center;
+               padding-top: 4px;
+          }
+
+          .quotes {
+               padding: 10px;
+               padding-left: 7vw;
+          }
+
+          .quotes button {
+               color: white;
+               background-color: orange;
+               height: 6vh;
+               width: 70%;
+               font-size: x-large;
+               border-style: none;
+               outline: none;
+               border: 1px solid black;
+               border-radius: 5px;
+               border: none;
+          }
+
+          .quotes button:hover {
+               cursor: pointer;
+               background-color: aqua;
+               color: black;
+               border: none;
+          }
+     </style>
+</head>
+
+<body>
+     <div class="main1">
+
+          <!-- Destination section  or calculate the trip cost..-->
+
+          <div class="content">
+               <div class="head">
+                    <h2>Calculate your trip cost</h2>
+                    <h1>Select Destination</h1>
+               </div>
+               <h3>Destination</h3>
+               <div class="destination">
+                    <div class="search">
+                         <i class="fa-solid fa-location-dot"></i>
+                         <input type="text" placeholder="Where you want to go?">
+                         <!-- <i class="fa fa-chevron-down" aria-hidden="true"></i> -->
+                    </div>
+               </div>
+               <h3>Hotel Category</h3>
+               <div class="hotel">
+                    <div class="box">2 Star</div>
+                    <div class="box">3 Star</div>
+                    <div class="box">4 Star</div>
+                    <div class="box">5 Star</div>
+               </div>
+               <h3>No. of Days</h3>
+               <div class="days">
+                    <div class="box">4</div>
+                    <div class="box">5</div>
+                    <div class="box">6</div>
+                    <div class="box">7</div>
+                    <div class="box">7+</div>
+               </div>
+
+               <h3>Month of Travel</h3>
+               <div class="travel">
+                    <input type="text" placeholder="Select month">
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+               </div>
+
+               <h3>Flight</h3>
+               <div class="flight">
+                    <div class="box">
+                         <p>Yes</p>
+                    </div>
+                    <div class="box">
+                         <p>No</p>
+                    </div>
+               </div>
+
+               <div class="last">
+                    <div class="quotes">
+                         <button type="button">Get Quotes</button>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+</body>
+
+</html>
